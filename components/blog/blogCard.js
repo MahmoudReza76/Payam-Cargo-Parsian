@@ -1,47 +1,45 @@
 import React from "react";
-import {ArrowRight, Clock, Calendar} from "lucide-react";
+import {ArrowLeft, Clock, Calendar} from "lucide-react";
 import Image from "next/image";
+
 function BlogCard() {
   const blogs = [
     {
       id: 1,
-      title: "Modern Logistics Solutions",
-      excerpt:
-        "Exploring innovative approaches to modern logistics and supply chain management...",
-      date: "Feb 15, 2024",
-      readTime: "5 min",
+      title: "راهکارهای مدرن در صنعت کارگو",
+      excerpt: "بررسی روش‌های نوین در مدیریت حمل و نقل و زنجیره تأمین کالا...",
+      date: "۱۵ بهمن ۱۴۰۲",
+      readTime: "۵ دقیقه",
       image:
-        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23E2E8F0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2564748B'%3ELogistics Image%3C/text%3E%3C/svg%3E"
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23E2E8F0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2564748B'%3Eمدیریت کارگو%3C/text%3E%3C/svg%3E"
     },
     {
       id: 2,
-      title: "International Shipping Guide",
-      excerpt:
-        "A comprehensive guide to understanding international shipping procedures...",
-      date: "Feb 12, 2024",
-      readTime: "4 min",
+      title: "راهنمای حمل و نقل بین‌المللی",
+      excerpt: "راهنمای جامع برای آشنایی با فرآیندهای حمل و نقل بین‌المللی...",
+      date: "۱۲ بهمن ۱۴۰۲",
+      readTime: "۴ دقیقه",
       image:
-        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23E2E8F0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2564748B'%3EShipping Image%3C/text%3E%3C/svg%3E"
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23E2E8F0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2564748B'%3Eحمل و نقل%3C/text%3E%3C/svg%3E"
     },
     {
       id: 3,
-      title: "Supply Chain Optimization",
+      title: "بهینه‌سازی زنجیره تأمین کالا",
       excerpt:
-        "Key strategies for optimizing your supply chain efficiency and performance...",
-      date: "Feb 10, 2024",
-      readTime: "6 min",
+        "راهکارهای کلیدی برای افزایش بهره‌وری و کارایی در زنجیره تأمین...",
+      date: "۱۰ بهمن ۱۴۰۲",
+      readTime: "۶ دقیقه",
       image:
-        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23E2E8F0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2564748B'%3ESupply Chain Image%3C/text%3E%3C/svg%3E"
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23E2E8F0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2564748B'%3Eزنجیره تأمین%3C/text%3E%3C/svg%3E"
     },
     {
       id: 4,
-      title: "Digital Freight Solutions",
-      excerpt:
-        "How digital transformation is reshaping the freight industry...",
-      date: "Feb 8, 2024",
-      readTime: "5 min",
+      title: "تحول دیجیتال در حمل و نقل کالا",
+      excerpt: "چگونه فناوری‌های دیجیتال صنعت حمل و نقل را متحول کرده‌اند...",
+      date: "۸ بهمن ۱۴۰۲",
+      readTime: "۵ دقیقه",
       image:
-        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23E2E8F0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2564748B'%3EDigital Image%3C/text%3E%3C/svg%3E"
+        "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='250' viewBox='0 0 400 250'%3E%3Crect width='400' height='250' fill='%23E2E8F0'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-size='20' fill='%2564748B'%3Eتحول دیجیتال%3C/text%3E%3C/svg%3E"
     }
   ];
 
@@ -53,7 +51,7 @@ function BlogCard() {
           className="group bg-white rounded-lg overflow-hidden border border-gray-100 hover:border-blue-200 transition-all duration-300"
         >
           <div className="flex flex-col sm:flex-row h-full">
-            {/* Image Section */}
+            {/* بخش تصویر */}
             <div className="sm:w-2/5 relative overflow-hidden">
               <Image
                 src={blog.image}
@@ -64,7 +62,7 @@ function BlogCard() {
               />
             </div>
 
-            {/* Content Section */}
+            {/* بخش محتوا */}
             <div className="sm:w-3/5 p-4 flex flex-col">
               <div className="flex items-center text-sm text-gray-500 mb-2 gap-4">
                 <div className="flex items-center">
@@ -87,8 +85,8 @@ function BlogCard() {
 
               <div className="mt-auto">
                 <button className="inline-flex items-center text-sm text-blue-500 hover:text-blue-700 transition-colors">
-                  Read More
-                  <ArrowRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                  مطالعه بیشتر
+                  <ArrowLeft className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
             </div>
