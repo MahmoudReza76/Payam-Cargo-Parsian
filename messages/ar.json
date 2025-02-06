@@ -1,0 +1,110 @@
+{
+  "name": "بيام كارغو بارسيان",
+  "navbar": {
+    "parsianCargo": {
+      "title": "بيام كارغو بارسيان",
+      "description": "بيام كارغو بارسيان هي شركة شحن توفر خدمات إرسال واستلام البضائع من إيران إلى جميع أنحاء العالم والعكس.",
+      "aboutUsTitle": "معلومات عنا",
+      "aboutUsDescription": "تعرف أكثر على بيام كارغو بارسيان",
+      "ourServicesTitle": "خدماتنا",
+      "ourServicesDescription": "تعرف أكثر على الخدمات التي نقدمها",
+      "contanTitle": "اتصل بنا",
+      "contanDescription": "اتصل بنا لمزيد من المعلومات"
+    },
+    "services": {
+      "servicesTitle": "الخدمات",
+      "passengersTitle": "المسافرون",
+      "passengersDescription": "نقدم خدمات للمسافرين",
+      "freightCostTitle": "تكلفة الشحن",
+      "freightCostDescription": "احسب تكلفة إرسال شحنتك",
+      "comercialCargoExportTitle": "تصدير البضائع التجارية",
+      "ComercialCargoExportDescription": "قم بتصدير بضائعك التجارية"
+    },
+    "freightPrice": {
+      "freightPriceTitle": "سعر الشحن"
+    },
+    "freightTracking": {
+      "freightTrackingTitle": "تتبع الشحنات"
+    },
+    "aboutUs": {
+      "aboutUsTitle": "معلومات عنا",
+      "satisfactionTitle": "رضا العملاء",
+      "satisfactionDescription": "نحن ملتزمون بتقديم أفضل خدمة لعملائنا",
+      "cooperateWithUsTitle": "تعاون معنا",
+      "cooperateWithUsDescription": "نحن نبحث دائمًا عن شركاء جدد لتوسيع خدماتنا",
+      "licensesTitle": "التراخيص",
+      "licensesDescription": "لدينا جميع التراخيص اللازمة لتقديم خدمات الشحن"
+    },
+    "guide": {
+      "guideTitle": "الدليل",
+      "howToUseTitle": "كيفية الاستخدام",
+      "howToUseDescription": "دليل استخدام الخدمات",
+      "supportTitle": "الدعم",
+      "SupportDescription": "احصل على المساعدة والدعم",
+      "faqTitle": "الأسئلة الشائعة",
+      "faqDescription": "الأسئلة الأكثر شيوعًا"
+    }
+  },
+  "hero": {
+    "slide1Title": "نقل سريع وآمن",
+    "slide1Description": "وصف: شحن سريع وموثوق مع تغليف قياسي وإجراءات أمان كاملة لمنع التلف",
+    "slide2Title": "خدمات الشحن الدولية",
+    "slide2Description": "وصف: شحن عالمي مع شركاء لوجستيين موثوقين وحلول متخصصة لأنواع مختلفة من الشحنات",
+    "slide3Title": "التخليص الجمركي والإدارة",
+    "slide3Description": "وصف: التعامل مع جميع إجراءات التخليص الجمركي والوثائق لتسريع الشحنات الدولية",
+    "slide4Title": "خدمات التوصيل السريع",
+    "slide4Description": "وصف: خيارات الشحن ذات الأولوية للشحنات العاجلة مع ضمان مواعيد التسليم"
+  },
+  "introduction": {
+    "firstLabel": "شريك لوجستي عالمي موثوق",
+    "secondLabel": "شركة نقل دولية",
+    "descriptionText": "مع أكثر من عقدين من التميز في مجال الخدمات اللوجستية الدولية، أثبتنا أنفسنا كقوة رائدة في النقل العالمي. تشمل مجموعتنا الشاملة من الخدمات النقل الجوي والبحري والبري، حيث نقدم موثوقية وكفاءة لا مثيل لها لعملائنا حول العالم.",
+    "firstDevTitle": "شبكة عالمية",
+    "firstDevDescription": "نخدم أكثر من 50 دولة بخبرة محلية",
+    "secondtDevTitle": "الموثوقية",
+    "secondDevDescription": "معدل تسليم آمن وفي الوقت المحدد بنسبة 99.9%",
+    "mainButton": "ابدأ الآن",
+    "secondaryButton": "تعرف أكثر"
+  },
+  "features": {
+    "featuresTitle": "شركة بيام كارغو بارسيان الدولية",
+    "card1Title": "النقل العالمي",
+    "card1Description": "خدمات شحن سريعة وموثوقة حول العالم مع إمكانيات تتبع الشحنات في الوقت الفعلي.",
+    "card1Label": "أكثر من 50 دولة مخدومة",
+    "card2Title": "حلول الشحن",
+    "card2Description": "معالجة متخصصة لجميع أنواع الشحنات، بما في ذلك العناصر الحساسة وذات القيمة العالية.",
+    "card2Label": "تسليم آمن بنسبة 99.9%",
+    "card3Title": "دعم على مدار الساعة",
+    "card3Description": "خدمة عملاء على مدار الساعة لمساعدتك في جميع احتياجات الشحن الخاصة بك.",
+    "card3Label": "متاح دائمًا"
+  },
+  "blog": {
+    "blogTitle": "أحدث المقالات من بيام كارغو بارسيان"
+  },
+  "footer": {
+    "description": "شريكك الموثوق به في الخدمات اللوجستية العالمية، نقدم لك خدمات نقل دولية متميزة.",
+    "label1Title": "توصيل سريع",
+    "label1Description": "شحن سريع إلى جميع أنحاء العالم",
+    "label2Title": "خدمات آمنة",
+    "label2Description": "نقل آمن 100٪",
+    "label3Title": "دعم على مدار الساعة",
+    "label3Description": "مساعدة مخصصة متاحة دائمًا",
+    "label4Title": "تغطية عالمية",
+    "label4Description": "خدمة متاحة في أكثر من 50 دولة",
+    "section1Title": "روابط سريعة",
+    "section1Item1": "من نحن",
+    "section1Item2": "خدماتنا",
+    "section1Item3": "تتبع الشحنة",
+    "section1Item4": "احصل على عرض سعر",
+    "section2Title": "خدماتنا",
+    "section2Item1": "الشحن الجوي",
+    "section2Item2": "الشحن البحري",
+    "section2Item3": "النقل البري",
+    "section2Item4": "التخزين",
+    "section3Title": "اتصل بنا",
+    "section3Item1": "كرج، حي كارماندان الشمالي، الجانب الشرقي من ميدان إنقلاب، زاوية شارع ٨ الشرقي",
+    "section3Item2": "+98 26 3420 99 71",
+    "section3Item3": "info@payamcargo.com",
+    "Copyright": "© 2025 Payam Cargo Parsian. جميع الحقوق محفوظة."
+  }
+}

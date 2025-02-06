@@ -1,0 +1,110 @@
+{
+  "name": "پیام کارگو پارسیان",
+  "navbar": {
+    "parsianCargo": {
+      "title": "پیام کارگو پارسیان",
+      "description": "پیام کارگو پارسیان یک شرکت حمل‌ونقل است که خدمات ارسال و دریافت بار از ایران به سراسر جهان و بالعکس را ارائه می‌دهد.",
+      "aboutUsTitle": "درباره ما",
+      "aboutUsDescription": "با پیام کارگو پارسیان بیشتر آشنا شوید",
+      "ourServicesTitle": "خدمات ما",
+      "ourServicesDescription": "درباره خدماتی که ارائه می‌دهیم بیشتر بدانید",
+      "contanTitle": "تماس با ما",
+      "contanDescription": "برای اطلاعات بیشتر با ما تماس بگیرید"
+    },
+    "services": {
+      "servicesTitle": "خدمات",
+      "passengersTitle": "مسافران",
+      "passengersDescription": "ما خدمات ویژه‌ای برای مسافران ارائه می‌دهیم",
+      "freightCostTitle": "هزینه حمل‌ونقل",
+      "freightCostDescription": "هزینه ارسال بار خود را محاسبه کنید",
+      "comercialCargoExportTitle": "صادرات بار تجاری",
+      "ComercialCargoExportDescription": "بار تجاری خود را صادر کنید"
+    },
+    "freightPrice": {
+      "freightPriceTitle": "قیمت حمل‌ونقل"
+    },
+    "freightTracking": {
+      "freightTrackingTitle": "رهگیری بار"
+    },
+    "aboutUs": {
+      "aboutUsTitle": "درباره ما",
+      "satisfactionTitle": "رضایت مشتریان",
+      "satisfactionDescription": "ما متعهد به ارائه بهترین خدمات به مشتریان خود هستیم",
+      "cooperateWithUsTitle": "همکاری با ما",
+      "cooperateWithUsDescription": "ما همیشه به دنبال شرکای جدید برای گسترش خدمات خود هستیم",
+      "licensesTitle": "مجوزها",
+      "licensesDescription": "ما تمامی مجوزهای لازم برای ارائه خدمات حمل‌ونقل را داریم"
+    },
+    "guide": {
+      "guideTitle": "راهنما",
+      "howToUseTitle": "نحوه استفاده",
+      "howToUseDescription": "راهنمای استفاده از خدمات",
+      "supportTitle": "پشتیبانی",
+      "SupportDescription": "دریافت کمک و پشتیبانی",
+      "faqTitle": "سوالات متداول",
+      "faqDescription": "پاسخ به سوالات رایج"
+    }
+  },
+  "hero": {
+    "slide1Title": "حمل و نقل سریع و ایمن",
+    "slide1Description": "ارسال سریع و مطمئن با بسته‌بندی استاندارد و تدابیر ایمنی کامل برای جلوگیری از آسیب",
+    "slide2Title": "خدمات حمل‌ونقل بین‌المللی",
+    "slide2Description": "ارسال کالا به سراسر جهان با همکاری شرکت‌های معتبر لجستیکی و راهکارهای تخصصی",
+    "slide3Title": "ترخیص و مدیریت گمرکی",
+    "slide3Description": "انجام کلیه مراحل ترخیص کالا و مدارک مورد نیاز برای تسریع در ارسال بین‌المللی",
+    "slide4Title": "خدمات تحویل اکسپرس",
+    "slide4Description": "گزینه‌های ارسال اولویت‌دار برای تحویل فوری با تضمین زمان‌بندی مشخص"
+  },
+  "introduction": {
+    "firstLabel": "شریک قابل اعتماد لجستیک جهانی",
+    "secondLabel": "شرکت حمل‌ونقل بین‌المللی",
+    "descriptionText": "با بیش از دو دهه تجربه در صنعت لجستیک بین‌المللی، ما خود را به‌عنوان یکی از پیشگامان حمل‌ونقل جهانی معرفی کرده‌ایم. خدمات جامع ما شامل حمل‌ونقل هوایی، دریایی و زمینی است که بالاترین سطح اطمینان و کارایی را برای مشتریان ما در سراسر جهان فراهم می‌کند.",
+    "firstDevTitle": "شبکه جهانی",
+    "firstDevDescription": "فعالیت در بیش از ۵۰ کشور با تخصص محلی",
+    "secondtDevTitle": "قابلیت اطمینان",
+    "secondDevDescription": "۹۹.۹٪ نرخ تحویل ایمن و به‌موقع",
+    "mainButton": "شروع کنید",
+    "secondaryButton": "بیشتر بدانید"
+  },
+  "features": {
+    "featuresTitle": "شرکت بین‌المللی پیام کارگو پارسیان",
+    "card1Title": "حمل‌ونقل جهانی",
+    "card1Description": "خدمات حمل‌ونقل سریع و مطمئن به سراسر جهان با قابلیت رهگیری لحظه‌ای.",
+    "card1Label": "فعال در ۵۰+ کشور",
+    "card2Title": "راهکارهای حمل‌ونقل بار",
+    "card2Description": "مدیریت تخصصی برای انواع بار از جمله کالاهای حساس و با ارزش بالا.",
+    "card2Label": "۹۹.۹٪ تحویل ایمن",
+    "card3Title": "پشتیبانی ۲۴/۷",
+    "card3Description": "پشتیبانی شبانه‌روزی برای کمک به تمام نیازهای حمل‌ونقل شما.",
+    "card3Label": "همیشه در دسترس"
+  },
+  "blog": {
+    "blogTitle": "آخرین مقالات پیام کارگو پارسیان"
+  },
+  "footer": {
+    "description": "شریک قابل اعتماد شما در لجستیک جهانی، ارائه خدمات برتر در حمل‌ونقل بین‌المللی.",
+    "label1Title": "تحویل سریع",
+    "label1Description": "ارسال اکسپرس به سراسر جهان",
+    "label2Title": "خدمات ایمن",
+    "label2Description": "حمل‌ونقل 100٪ ایمن",
+    "label3Title": "پشتیبانی 24/7",
+    "label3Description": "پشتیبانی و کمک‌رسانی اختصاصی",
+    "label4Title": "پوشش جهانی",
+    "label4Description": "خدمات به بیش از 50 کشور",
+    "section1Title": "لینک‌های سریع",
+    "section1Item1": "درباره ما",
+    "section1Item2": "خدمات",
+    "section1Item3": "پیگیری مرسوله",
+    "section1Item4": "دریافت قیمت",
+    "section2Title": "خدمات ما",
+    "section2Item1": "حمل‌ونقل هوایی",
+    "section2Item2": "حمل‌ونقل دریایی",
+    "section2Item3": "حمل‌ونقل جاده‌ای",
+    "section2Item4": "انبارداری",
+    "section3Title": "تماس با ما",
+    "section3Item1": "کرج، کوی کارمندان شمالی، ضلع شرقی میدان انقلاب، نبش ۸ شرقی",
+    "section3Item2": "+98 26 3420 99 71",
+    "section3Item3": "info@payamcargo.com",
+    "Copyright": "© 2025 Payam Cargo Parsian. تمامی حقوق محفوظ است."
+  }
+}
