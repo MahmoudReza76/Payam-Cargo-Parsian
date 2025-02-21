@@ -105,7 +105,12 @@ function MobileNavigation({Logo, Register}) {
             </AccordionItem>
           ))}
         </Accordion>
-
+        <Link
+          href="/blog"
+          className="block px-1 py-4 hover:bg-accent rounded-md transition-colors"
+        >
+          {t("parsianCargo.blogTitle")}
+        </Link>
         <div className="mt-8">
           <Register />
         </div>

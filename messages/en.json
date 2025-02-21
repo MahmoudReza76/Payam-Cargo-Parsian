@@ -9,7 +9,8 @@
       "ourServicesTitle": "Our Services",
       "ourServicesDescription": "Learn more about the services we provide",
       "contanTitle": "Contact",
-      "contanDescription": "Contact us for more information"
+      "contanDescription": "Contact us for more information",
+      "blogTitle": "Blog"
     },
     "services": {
       "servicesTitle": "Services",
