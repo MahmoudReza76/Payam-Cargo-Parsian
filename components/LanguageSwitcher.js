@@ -34,13 +34,13 @@ const LanguageSelector = () => {
 
   return (
     <Select
-      className="text-neutral-950"
+      className="text-primary"
       onValueChange={handleLanguageChange}
       value={locale}
     >
-      <SelectTrigger className="w-[70px] bg-inherit text-neutral-950 border-0">
+      <SelectTrigger className="w-[70px] bg-inherit text-primary border-0">
         <SelectValue>
-          <Earth className="text-neutral-600" />
+          <Earth className="text-gray-500" />
         </SelectValue>
       </SelectTrigger>
       <SelectContent>

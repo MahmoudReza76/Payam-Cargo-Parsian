@@ -1,56 +1,75 @@
+"use client";
+
 import React from "react";
 import {Clock, Eye, Bookmark, Share2, ChevronRight} from "lucide-react";
+import {useBlog} from "@/hooks/useBlog";
+import {useLocale} from "next-intl";
+import Link from "next/link";
+import Image from "next/image";
 
-const recentPosts = [
-  {
-    title: "راهنمای جامع حمل و نقل کارگو هوایی",
-    excerpt:
-      "آشنایی با مراحل ارسال، قوانین و مقررات، و نکات مهم در حمل و نقل کارگو هوایی...",
-    category: "حمل و نقل هوایی",
-    author: "علی محمدی",
-    date: "۱۸ بهمن ۱۴۰۲",
-    readTime: "۱۲ دقیقه",
-    views: "۵,۴۳۲",
-    isNew: true,
-    gradient: "from-blue-400 to-indigo-500"
-  },
-  {
-    title: "محاسبه هزینه‌های کارگو بین‌المللی",
-    excerpt:
-      "بررسی فاکتورهای موثر در قیمت‌گذاری و نحوه محاسبه هزینه‌های حمل کارگو...",
-    category: "هزینه و تعرفه",
-    author: "مریم کریمی",
-    date: "۱۷ بهمن ۱۴۰۲",
-    readTime: "۸ دقیقه",
-    views: "۴,۸۹۱",
-    isNew: true,
-    gradient: "from-purple-400 to-pink-500"
-  },
-  {
-    title: "مدارک مورد نیاز برای ارسال کارگو",
-    excerpt:
-      "راهنمای کامل اسناد و مدارک ضروری برای ارسال کارگو به مقاصد مختلف...",
-    category: "مستندات",
-    author: "حسین رضایی",
-    date: "۱۶ بهمن ۱۴۰۲",
-    readTime: "۱۰ دقیقه",
-    views: "۳,۷۶۵",
-    isNew: false,
-    gradient: "from-green-400 to-emerald-500"
+export default function RecentPosts({page = 1, limit = 6}) {
+  const locale = useLocale();
+  const {blogs, isLoadingBlogs, errorBlogs} = useBlog(null, page, limit);
+
+  if (isLoadingBlogs) {
+    return (
+      <div className="text-gray-600 text-center">در حال بارگذاری مقالات...</div>
+    );
   }
-];
 
-export default function RecentPosts() {
+  if (errorBlogs) {
+    console.error("Error in RecentPosts:", errorBlogs);
+    return (
+      <div className="text-red-600 text-center">
+        خطا در بارگذاری مقالات: {errorBlogs.message}
+      </div>
+    );
+  }
+
+  if (!blogs || blogs.length === 0) {
+    return (
+      <div className="text-gray-600 text-center">هیچ مقاله‌ای یافت نشد.</div>
+    );
+  }
+
+  const posts = blogs.map((blog, index) => ({
+    _id: blog._id,
+    title: blog.title || "بدون عنوان",
+    excerpt: blog.description
+      ? blog.description.replace(/(\*\*|__|\*|_|\+\+)/g, "").substring(0, 100) +
+        "..."
+      : "بدون توضیحات",
+    category: "بلاگ",
+    author: "نویسنده ناشناس",
+    date: new Date(blog.createdAt).toLocaleDateString(locale, {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    }),
+    readTime: "۱۰ دقیقه",
+    views: "۱,۰۰۰",
+    isNew: index === 0,
+    image: blog.images && blog.images[0] ? blog.images[0] : "/placeholder.jpg"
+  }));
+
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      {recentPosts.map((post, index) => (
+      {posts.map((post) => (
         <div
-          key={index}
+          key={post._id}
           className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 group"
         >
-          <div
-            className={`h-48 bg-gradient-to-r ${post.gradient} relative overflow-hidden transition-all duration-300`}
-          >
+          <div className="h-48 relative overflow-hidden">
+            <Image
+              src={post.image}
+              alt={post.title}
+              width={400}
+              height={192}
+              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+              onError={() =>
+                console.error(`Failed to load image for blog: ${post.title}`)
+              }
+            />
             {post.isNew && (
               <div className="absolute top-4 right-4 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full">
                 <span className="text-white text-sm">جدید</span>
@@ -86,10 +105,16 @@ export default function RecentPosts() {
                   <span>{post.views}</span>
                 </div>
               </div>
-              <button className="text-blue-600 flex items-center gap-1 hover:gap-2 transition-all group-hover:text-blue-700">
+              <Link
+                href={`/${locale}/blog/${post._id}`}
+                className="text-blue-600 flex items-center gap-1 hover:gap-2 transition-all group-hover:text-blue-700"
+                onClick={() =>
+                  console.log(`Navigating to: /${locale}/blog/${post._id}`)
+                }
+              >
                 <span>ادامه مطلب</span>
                 <ChevronRight className="h-4 w-4" />
-              </button>
+              </Link>
             </div>
           </div>
         </div>

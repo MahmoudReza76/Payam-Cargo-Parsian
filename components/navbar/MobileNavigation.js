@@ -49,7 +49,7 @@ function MobileNavigation({Logo, Register}) {
       items: [
         {href: "/company", label: t("aboutUs.satisfactionTitle")},
         {href: "/team", label: t("aboutUs.cooperateWithUsTitle")},
-        {href: "/history", label: t("aboutUs.licensesTitle")}
+        {href: "/licenses", label: t("aboutUs.licensesTitle")}
       ]
     },
     {

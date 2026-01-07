@@ -1,25 +1,35 @@
 {
-  "name": "Payam Cargo Parsian",
+  "name": "Payam Cargo",
   "navbar": {
+    "dashboard": "Dashboard",
+    "logout": "Logout",
     "parsianCargo": {
-      "title": "Payam Cargo Parsian",
-      "description": "Payam Cargo Parsian is a cargo company that provides services to send and receive cargo from Iran to the world and vice versa.",
+      "title": "Payam Cargo",
+      "description": "Payam Cargo is a transportation company offering services to send and receive cargo from Iran to worldwide and vice versa.",
       "aboutUsTitle": "About Us",
-      "aboutUsDescription": "Learn more about Payam Cargo Parsian",
+      "aboutUsDescription": "Learn more about Payam Cargo",
       "ourServicesTitle": "Our Services",
-      "ourServicesDescription": "Learn more about the services we provide",
-      "contanTitle": "Contact",
-      "contanDescription": "Contact us for more information",
+      "ourServicesDescription": "Discover more about the services we offer",
+      "contanTitle": "Contact Us",
+      "contanDescription": "Get in touch for more information",
       "blogTitle": "Blog"
     },
     "services": {
       "servicesTitle": "Services",
       "passengersTitle": "Passengers",
-      "passengersDescription": "We provide services for passengers",
+      "passengersDescription": "We offer special services for passengers",
       "freightCostTitle": "Freight Cost",
-      "freightCostDescription": "Calculate the cost of sending your cargo",
-      "comercialCargoExportTitle": "Comercial Cargo Export",
-      "ComercialCargoExportDescription": "Export your commercial cargo"
+      "freightCostDescription": "Calculate the cost of shipping your cargo",
+      "comercialCargoExportTitle": "Commercial Cargo Export",
+      "ComercialCargoExportDescription": "Export your commercial cargo",
+      "airTransportTitle": "Air Transport",
+      "airTransportDescription": "Providing fast and secure air transport services for shipping your cargo worldwide in collaboration with reputable airlines.",
+      "seaTransportationTitle": "Sea Transportation",
+      "seaTransportationDescription": "Cost-effective and reliable sea transportation for large and commercial cargo using advanced fleets and international routes.",
+      "railTransportationTitle": "Rail Transportation",
+      "railTransportationDescription": "Efficient and sustainable rail transport services for transferring cargo regionally and internationally with high speed and safety.",
+      "landTransportationTitle": "Land Transportation",
+      "landTransportationDescription": "Providing land transport services for fast and secure cargo movement within the country and across borders with an equipped fleet."
     },
     "freightPrice": {
       "freightPriceTitle": "Freight Price"
@@ -29,83 +39,292 @@
     },
     "aboutUs": {
       "aboutUsTitle": "About Us",
-      "satisfactionTitle": "Satisfaction",
-      "satisfactionDescription": "We are committed to providing the best service to our customers",
-      "cooperateWithUsTitle": "Cooperate With Us",
+      "satisfactionTitle": "Customer Satisfaction",
+      "satisfactionDescription": "We are committed to providing the best services to our customers",
+      "cooperateWithUsTitle": "Cooperate with Us",
       "cooperateWithUsDescription": "We are always looking for new partners to expand our services",
       "licensesTitle": "Licenses",
-      "licensesDescription": "We have all the necessary licenses to provide cargo services"
+      "licensesDescription": "We hold all necessary licenses for providing transportation services"
     },
     "guide": {
       "guideTitle": "Guide",
-      "howToUseTitle": "How To Use",
-      "howToUseDescription": "Guide on Using Services",
+      "howToUseTitle": "How to Use",
+      "howToUseDescription": "Guide to using our services",
       "supportTitle": "Support",
       "SupportDescription": "Get help and support",
       "faqTitle": "FAQ",
-      "faqDescription": "frequently asked questions"
+      "faqDescription": "Answers to frequently asked questions"
+    },
+    "register": {
+      "login": "Login",
+      "signup": "Sign Up"
     }
   },
   "hero": {
     "slide1Title": "Fast and Secure Transportation",
-    "slide1Description": "Description: Quick and reliable shipping with standard packaging and full safety measures to prevent damage",
-    "slide2Title": "International Shipping Services",
-    "slide2Description": "Description: Global shipping with trusted logistics partners and specialized solutions for different types of cargo",
+    "slide1Description": "Fast and reliable shipping with standard packaging and comprehensive safety measures to prevent damage",
+    "slide2Title": "International Transportation Services",
+    "slide2Description": "Global cargo delivery in collaboration with trusted logistics companies and specialized solutions",
     "slide3Title": "Customs Clearance and Management",
-    "slide3Description": "Description: Handling all customs clearance procedures and documentation to expedite international shipments",
+    "slide3Description": "Handling all customs clearance stages and required documentation to expedite international shipping",
     "slide4Title": "Express Delivery Services",
-    "slide4Description": "Description: Priority shipping options for urgent deliveries with guaranteed timeframes"
+    "slide4Description": "Priority shipping options for urgent deliveries with guaranteed timelines"
   },
   "introduction": {
     "firstLabel": "Trusted Global Logistics Partner",
     "secondLabel": "International Transportation Company",
-    "descriptionText": "With over two decades of excellence in international logistics, we ve established ourselves as a leading force in global transportation. Our comprehensive suite of services spans air, sea, and land logistics, delivering unparalleled reliability and efficiency to our worldwide client base.",
+    "descriptionText": "With over two decades of experience in the international logistics industry, we have established ourselves as a leader in global transportation. Our comprehensive services include air, sea, land, and rail transport, ensuring the highest level of reliability and efficiency for our clients worldwide.",
     "firstDevTitle": "Global Network",
-    "firstDevDescription": "Serving 50+ countries with local expertise",
+    "firstDevDescription": "Operating in over 50 countries with local expertise",
     "secondtDevTitle": "Reliability",
-    "secondDevDescription": "99.9% Safe & On-time Delivery Rate",
+    "secondDevDescription": "99.9% safe and on-time delivery rate",
     "mainButton": "Get Started",
     "secondaryButton": "Learn More"
   },
   "features": {
-    "featuresTitle": "Payam Cargo Parsian International Company",
-    "card1Title": "Global Transportation",
-    "card1Description": "Fast and reliable shipping services across the world with real-time tracking capabilities.",
-    "card1Label": "50+ Countries Served",
-    "card2Title": "Cargo Solutions",
-    "card2Description": "Specialized handling for all types of cargo including sensitive and high-value items.",
-    "card2Label": "99.9% Safe Delivery",
+    "featuresTitle": "Payam Cargo International Company",
+    "card1Title": "Cargo Shipping",
+    "card1Description": "Fast and reliable transportation services worldwide with real-time tracking capabilities.",
+    "card1Label": "Serving over 50 countries",
+    "card2Title": "Freight Transportation Solutions",
+    "card2Description": "Specialized management for all types of cargo, including sensitive and high-value items.",
+    "card2Label": "99.9% safe delivery",
     "card3Title": "24/7 Support",
-    "card3Description": "Round-the-clock customer service to assist you with all your shipping needs.",
+    "card3Description": "Round-the-clock support to assist with all your transportation needs.",
     "card3Label": "Always Available"
   },
+  "airlinePartners": {
+    "featuresTitle": "Our Partners",
+    "viewDetails": "View Details",
+    "viewAllPartners": "View All Partners",
+    "partners": [
+      {
+        "name": "Mahan Air",
+        "description": "One of the largest airlines...",
+        "logo": "https://logoyab.com/wp-content/uploads/2024/05/Mahan-Air-Logo-1030x1030.png"
+      },
+      {
+        "name": "Qeshm Air",
+        "description": "Provider of domestic and international flight services...",
+        "logo": "https://logoyab.com/wp-content/uploads/2024/06/Qeshm-Air-logo-1-1030x1030.png"
+      },
+      {
+        "name": "Sahel Bikaran Alborz",
+        "description": "One of the reputable Alborz holdings in the field of international transportation...",
+        "logo": "/asset/partners/1.jpg"
+      },
+      {
+        "name": "Jahan Seir Tarabar",
+        "description": "Jahan Seir Tarabar company, operating in the field of transportation and transit...",
+        "logo": "/asset/partners/2.jpg"
+      }
+    ]
+  },
   "blog": {
-    "blogTitle": "The latest articles from Payam Cargo Parsian"
+    "blogTitle": "Latest Articles from Payam Cargo"
   },
   "footer": {
-    "description": "Your trusted partner in global logistics, delivering excellence in international transportation services.",
+    "description": "Your trusted partner in global logistics, providing superior international transportation services.",
     "label1Title": "Fast Delivery",
     "label1Description": "Express shipping worldwide",
     "label2Title": "Secure Services",
-    "label2Description": "100% secure shipping",
+    "label2Description": "100% secure transportation",
     "label3Title": "24/7 Support",
-    "label3Description": "Dedicated assistance",
+    "label3Description": "Dedicated support and assistance",
     "label4Title": "Global Coverage",
-    "label4Description": "50+ countries served",
+    "label4Description": "Services to over 50 countries",
     "section1Title": "Quick Links",
     "section1Item1": "About Us",
     "section1Item2": "Services",
     "section1Item3": "Track Shipment",
     "section1Item4": "Get Quote",
     "section2Title": "Our Services",
-    "section2Item1": "Air Freight",
-    "section2Item2": "Sea Freight",
-    "section2Item3": "Road Transport",
+    "section2Item1": "Air Transportation",
+    "section2Item2": "Sea Transportation",
+    "section2Item3": "Road Transportation",
     "section2Item4": "Warehousing",
     "section3Title": "Contact Us",
-    "section3Item1": "8th Sharghi St., Enghelab Square (East Side), Koye Karmandan Shomali, Karaj, Iran",
-    "section3Item2": "+98 26 3420 99 71",
+    "section3Item1": "4th Floor, Sam Building, Valiasr Street, opposite Ghaem Hospital, Danesh Amooz Boulevard, Karaj, Iran",
+    "section3Item1b": "Unit 27, 6th Floor, Falsafi Building, Plot 2, Falsafi Alley, Rudbar-e Sharghi St., Mirdamad, Tehran, Iran",
+    "section3Item2": "+98 912 839 05 97",
+    "section3Item2b": "+98 919 363 62 18",
+    "section3Item2c": "+98 26 327 04 231",
     "section3Item3": "info@payamcargo.com",
-    "Copyright": "© 2025 Payam Cargo Parsian. All rights reserved."
+    "Copyright": "© 2025 Payam Cargo. All rights reserved."
+  },
+  "register": {
+    "register": "Register",
+    "registerSubtitle": "Create a New Account",
+    "loginTitle": "Login",
+    "loginSubtitle": "Access Your Existing Account",
+    "login": {
+      "title": "Login to Your Account",
+      "email": "Email",
+      "password": "Password",
+      "rememberMe": "Remember Me",
+      "forgotPassword": "Forgot Your Password?",
+      "loginButton": "Login",
+      "registerButton": "Register",
+      "noAccount": "Don't have an account?",
+      "registerNow": "Register Now",
+      "emailPlaceholder": "Enter your email",
+      "passwordPlaceholder": "Enter your password"
+    },
+    "signup": {
+      "title": "Sign Up for Payam Cargo",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "password": "Password",
+      "username": "Username",
+      "phone": "Phone Number",
+      "confirmPassword": "Confirm Password",
+      "signupButton": "Sign Up",
+      "emailPlaceholder": "Enter your email",
+      "passwordPlaceholder": "Enter your password",
+      "confirmPasswordPlaceholder": "Re-enter your password",
+      "usernamePlaceholder": "Enter your username",
+      "phonePlaceholder": "Enter your phone number",
+      "termsAgreement": "By signing up, you agree to our terms and conditions.",
+      "termsLink": "Terms and Conditions",
+      "registerButton": "Register",
+      "alreadyHaveAccount": "Already have an account?",
+      "loginNow": "Login Now"
+    }
+  },
+  "landingPage": {
+    "hero": {
+      "trustBadge": "The Most Reliable International Transport Company",
+      "title": "The Fastest Way to Transport",
+      "subtitle": "Your Cargo",
+      "description": "With over 15 years of experience in the air, sea, land, and rail transport industry, choose us as your business partner. We provide world-class cargo services with the highest standards.",
+      "startButton": "Start Collaboration",
+      "consultButton": "Free Consultation",
+      "trackingTitle": "Track Shipment",
+      "trackingLabel": "Tracking Code",
+      "trackingPlaceholder": "Enter your tracking code",
+      "trackingButton": "Track Status",
+      "trackingGuide": "Shipment Tracking Guide"
+    },
+    "stats": {
+      "countries": {
+        "title": "150+",
+        "description": "Countries Covered"
+      },
+      "shipments": {
+        "title": "50K+",
+        "description": "Shipments Delivered"
+      },
+      "satisfaction": {
+        "title": "99%",
+        "description": "Customer Satisfaction"
+      },
+      "support": {
+        "title": "24/7",
+        "description": "Online Support"
+      }
+    },
+    "services": {
+      "title": "International Transport Services",
+      "description": "Using the most advanced air, sea, rail, and land fleets and collaborating with top international partners, we are the fastest and safest way to deliver your cargo to its destination.",
+      "express": {
+        "title": "Express Transport",
+        "description": "The fastest method to transport your urgent cargo to any part of the world with complete security and in the shortest time possible.",
+        "features": [
+          "Express delivery in the shortest time possible",
+          "Full insurance coverage for shipments",
+          "Real-time online tracking system"
+        ]
+      },
+      "standard": {
+        "title": "Standard Transport",
+        "description": "Cost-effective and secure transport services for your commercial cargo.",
+        "features": [
+          "Balance between cost and speed",
+          "Full and standard insurance coverage",
+          "Suitable for various commercial shipments"
+        ]
+      },
+      "specialized": {
+        "title": "Specialized Cargo Transport",
+        "description": "Specialized services for sensitive, perishable, and unique cargo with special handling conditions.",
+        "features": [
+          "Perishable and pharmaceutical cargo",
+          "Advanced and sensitive equipment",
+          "Special pet transport services"
+        ]
+      },
+      "moreInfoButton": "More Information"
+    },
+    "contact": {
+      "title": "Get in Touch with Us",
+      "description": "Our experts are ready to answer your questions and provide specialized transport consultation.",
+      "phoneLabel": "Direct Call",
+      "phone": "+98 912 839 05 97",
+      "phoneb": "+98 919 363 62 18",
+      "phonec": "+98 26 327 04 231",
+      "emailLabel": "Email",
+      "email": "info@payamcargo.com",
+      "addressLabel": "Head Office Address",
+      "address": "4th Floor, Sam Building, Valiasr Street, opposite Ghaem Hospital, Danesh Amooz Boulevard, Karaj, Iran",
+      "addressb": "Unit 27, 6th Floor, Falsafi Building, Plot 2, Falsafi Alley, Rudbar-e Sharghi St., Mirdamad, Tehran, Iran",
+      "formTitle": "Transport Consultation Request Form",
+      "nameLabel": "Full Name",
+      "phoneFormLabel": "Phone Number",
+      "serviceLabel": "Type of Service",
+      "serviceOptions": {
+        "express": "Express Air Transport",
+        "standard": "Standard Sea Transport",
+        "specialized": "Specialized Rail Transport",
+        "customs": "Land Transport Services"
+      },
+      "detailsLabel": "Details",
+      "submitButton": "Submit Request"
+    },
+    "cta": {
+      "title": "Ready to Provide Transport Services for You",
+      "description": "Expand your business and access global markets quickly with our international transport services.",
+      "consultButton": "Request Free Consultation",
+      "quoteButton": "Get Transport Quote"
+    }
+  },
+  "whyPayamCargo": {
+    "title": "Why Choose Payam Cargo?",
+    "description": "We don’t just transport cargo; we are your trusted business partner in the export journey.",
+    "benefits": [
+      {
+        "title": "Official collaboration with reputable companies and green customs clearance"
+      },
+      {
+        "title": "Option to charter flights and plan customized transport requests"
+      },
+      {
+        "title": "Providing customs consultancy and handling clearance and export procedures"
+      },
+      {
+        "title": "Speed in operations, security in transport, and transparency in services"
+      },
+      {
+        "title": "Specialized services for exporters, industrial companies, and international traders"
+      },
+      {
+        "title": "Door-to-door transport from origin and vice versa"
+      },
+      {
+        "title": "Temporary cargo warehousing"
+      },
+      {
+        "title": "Handling passenger freight services"
+      },
+      {
+        "title": "Representation in 15 countries worldwide"
+      }
+    ],
+    "cta": {
+      "title": "Specialized Coverage in the Middle East, Central Asia, UAE, and China",
+      "description": "Payam Cargo is ready to provide air, sea, land, and rail transport services for all types of cargo. Contact us, and our consultants will respond in the shortest time possible.",
+      "consultButton": "Request Consultation",
+      "contactButton": "Contact Us"
+    }
   }
 }

@@ -72,9 +72,7 @@ function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 py-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h2 className="text-xl font-bold text-white">
-              Payam Cargo Parsian
-            </h2>
+            <h2 className="text-xl font-bold text-white">Payam Cargo</h2>
             <p className="text-gray-400 text-sm leading-relaxed">
               {t("description")}
             </p>
@@ -188,14 +186,34 @@ function Footer() {
           <div>
             <h3 className="font-semibold text-lg mb-4">{t("section3Title")}</h3>
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-blue-400 " />
-                <p className="text-gray-400 ">{t("section3Item1")}</p>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-blue-400 mt-1" />
+                <div>
+                  <p className="text-gray-400">{t("section3Item1")}</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <MapPin className="w-5 h-5 text-blue-400 mt-1" />
+                <div>
+                  <p className="text-gray-400">{t("section3Item1b")}</p>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-blue-400" />
                 <p dir="ltr" className="text-gray-400">
                   {t("section3Item2")}
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-blue-400" />
+                <p dir="ltr" className="text-gray-400">
+                  {t("section3Item2b")}
+                </p>
+              </div>
+              <div className="flex items-center gap-3">
+                <Phone className="w-5 h-5 text-blue-400" />
+                <p dir="ltr" className="text-gray-400">
+                  {t("section3Item2c")}
                 </p>
               </div>
               <div className="flex items-center gap-3">

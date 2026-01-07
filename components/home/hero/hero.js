@@ -16,6 +16,7 @@ import slide2 from "@/public/asset/2.png";
 import slide3 from "@/public/asset/3.png";
 import slide4 from "@/public/asset/4.png";
 import {useTranslations} from "next-intl";
+import Logo from "@/components/navbar/logo";
 
 function Hero() {
   const t = useTranslations("hero");
@@ -68,6 +69,10 @@ function Hero() {
             <CarouselItem key={index}>
               <div className="p-1">
                 <div className="relative rounded-lg p-6 md:h-[80vh] h-80 flex flex-col items-center justify-center">
+                  {/* Logo positioned at the top-left */}
+                  <div className="absolute top-4 left-4 z-20">
+                    <Logo />
+                  </div>
                   <Image
                     src={item.image}
                     alt={item.title}

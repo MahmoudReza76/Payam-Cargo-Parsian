@@ -1,55 +1,69 @@
+"use client";
+
 import React, {useState, useEffect} from "react";
 import {motion, AnimatePresence} from "framer-motion";
 import {User, Calendar, Eye, ArrowRight} from "lucide-react";
-
-const featuredPosts = [
-  {
-    id: 1,
-    title: "تحول در صنعت حمل و نقل با ورود کارگوهای هوشمند",
-    excerpt:
-      "بررسی تکنولوژی‌های نوین در صنعت کارگو و حمل و نقل هوشمند: از ردیابی لحظه‌ای محموله‌ها تا بهینه‌سازی مسیرهای حمل و نقل با هوش مصنوعی...",
-    author: "محمد امینی",
-    date: "۲۳ بهمن ۱۴۰۲",
-    readTime: "۸ دقیقه",
-    category: "تکنولوژی کارگو",
-    views: "۹,۴۵۶",
-    gradient: "from-purple-600 to-blue-500"
-  },
-  {
-    id: 2,
-    title: "راهنمای جامع قوانین گمرکی برای صادرکنندگان",
-    excerpt:
-      "آشنایی با آخرین قوانین و مقررات گمرکی برای صادرات کالا، نحوه اخذ مجوزها و مراحل ترخیص کارگو از گمرک به زبان ساده",
-    author: "سارا حسینی",
-    date: "۲۱ بهمن ۱۴۰۲",
-    readTime: "۱۰ دقیقه",
-    category: "قوانین گمرکی",
-    views: "۸,۸۷۲",
-    gradient: "from-pink-500 to-orange-400"
-  },
-  {
-    id: 3,
-    title: "بهترین مسیرهای حمل کارگو هوایی در سال ۲۰۲۴",
-    excerpt:
-      "مقایسه مسیرهای مختلف حمل کارگو هوایی از نظر هزینه، زمان و امنیت. راهنمای انتخاب بهترین مسیر برای محموله‌های تجاری شما.",
-    author: "رضا کریمی",
-    date: "۱۹ بهمن ۱۴۰۲",
-    readTime: "۱۲ دقیقه",
-    category: "حمل و نقل هوایی",
-    views: "۱۱,۲۳۰",
-    gradient: "from-green-500 to-teal-400"
-  }
-];
+import {useBlog} from "@/hooks/useBlog";
+import {useLocale} from "next-intl";
+import Link from "next/link";
 
 export default function FeaturedCarousel() {
+  const locale = useLocale();
   const [currentSlide, setCurrentSlide] = useState(0);
+  const {blogs, isLoadingBlogs, errorBlogs} = useBlog(null, 1, 3);
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % featuredPosts.length);
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
+    if (blogs && blogs.length > 0) {
+      const timer = setInterval(() => {
+        setCurrentSlide((prev) => (prev + 1) % blogs.length);
+      }, 5000);
+      return () => clearInterval(timer);
+    }
+  }, [blogs]);
+
+  if (isLoadingBlogs) {
+    return (
+      <div className="text-gray-600 text-center h-[500px]">
+        در حال بارگذاری مقالات...
+      </div>
+    );
+  }
+
+  if (errorBlogs) {
+    console.error("Error in FeaturedCarousel:", errorBlogs);
+    return (
+      <div className="text-red-600 text-center h-[500px]">
+        خطا در بارگذاری مقالات: {errorBlogs.message}
+      </div>
+    );
+  }
+
+  if (!blogs || blogs.length === 0) {
+    return (
+      <div className="text-gray-600 text-center h-[500px]">
+        هیچ مقاله‌ای یافت نشد.
+      </div>
+    );
+  }
+
+  const featuredPosts = blogs.map((blog) => ({
+    id: blog._id,
+    title: blog.title || "بدون عنوان",
+    excerpt: blog.description
+      ? blog.description.replace(/(\*\*|__|\*|_|\+\+)/g, "").substring(0, 150) +
+        "..."
+      : "بدون توضیحات",
+    author: "نویسنده ناشناس",
+    date: new Date(blog.createdAt).toLocaleDateString(locale, {
+      year: "numeric",
+      month: "long",
+      day: "numeric"
+    }),
+    readTime: "۱۰ دقیقه",
+    category: "بلاگ",
+    views: "۱,۰۰۰",
+    image: blog.images && blog.images[0] ? blog.images[0] : "/placeholder.jpg"
+  }));
 
   const slideVariants = {
     enter: (direction) => ({
@@ -85,9 +99,12 @@ export default function FeaturedCarousel() {
           className="absolute w-full h-full"
         >
           <div
-            className={`w-full h-full bg-gradient-to-r ${featuredPosts[currentSlide].gradient} p-12 relative`}
+            className="w-full h-full bg-cover bg-center p-12 relative"
+            style={{
+              backgroundImage: `url(${featuredPosts[currentSlide].image})`
+            }}
           >
-            <div className="absolute inset-0 bg-black/20 backdrop-blur-[2px]"></div>
+            <div className="absolute inset-0 bg-black/40 backdrop-blur-[2px]"></div>
             <div className="relative z-10 h-full flex flex-col justify-between text-white">
               <div>
                 <span className="inline-block px-4 py-2 bg-white/20 rounded-full text-sm mb-6">
@@ -115,14 +132,23 @@ export default function FeaturedCarousel() {
                     <span>{featuredPosts[currentSlide].views} بازدید</span>
                   </div>
                 </div>
-                <motion.button
-                  whileHover={{scale: 1.05}}
-                  whileTap={{scale: 0.95}}
+                <Link
+                  href={`/${locale}/blog/${featuredPosts[currentSlide].id}`}
                   className="bg-white text-gray-900 px-6 py-3 rounded-xl flex items-center gap-2 font-medium"
+                  onClick={() =>
+                    console.log(
+                      `Navigating to: /${locale}/blog/${featuredPosts[currentSlide].id}`
+                    )
+                  }
                 >
-                  مطالعه مقاله
+                  <motion.span
+                    whileHover={{scale: 1.05}}
+                    whileTap={{scale: 0.95}}
+                  >
+                    مطالعه مقاله
+                  </motion.span>
                   <ArrowRight className="h-5 w-5" />
-                </motion.button>
+                </Link>
               </div>
             </div>
           </div>

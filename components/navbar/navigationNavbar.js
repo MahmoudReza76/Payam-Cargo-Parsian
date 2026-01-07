@@ -38,10 +38,13 @@ function NavigationNavbar() {
   const locale = useLocale();
 
   return (
-    <NavigationMenu dir={locale === "fa" || locale === "ar" ? "rtl" : "ltr"}>
+    <NavigationMenu
+      className="z-[9000]"
+      dir={locale === "fa" || locale === "ar" ? "rtl" : "ltr"}
+    >
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-gray-500">
             {t("parsianCargo.title")}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -49,13 +52,13 @@ function NavigationNavbar() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-br from-blue-800 to-blue-400 p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
-                    <div className="mb-2 mt-4 text-lg font-medium">
+                    <div className="mb-2 mt-4 text-lg font-medium text-white">
                       {t("parsianCargo.title")}
                     </div>
-                    <p className="text-sm leading-tight text-muted-foreground">
+                    <p className="text-sm leading-tight text-gray-200">
                       {t("parsianCargo.description")}
                     </p>
                   </Link>
@@ -78,7 +81,7 @@ function NavigationNavbar() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-gray-500">
             {t("services.servicesTitle")}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -95,12 +98,36 @@ function NavigationNavbar() {
               >
                 {t("services.ComercialCargoExportDescription")}
               </ListItem>
+              <ListItem
+                href="/airtransport"
+                title={t("services.airTransportTitle")}
+              >
+                {t("services.airTransportDescription")}
+              </ListItem>
+              <ListItem
+                href="/seatransportation"
+                title={t("services.seaTransportationTitle")}
+              >
+                {t("services.seaTransportationDescription")}
+              </ListItem>
+              <ListItem
+                href="/railtransportation"
+                title={t("services.railTransportationTitle")}
+              >
+                {t("services.railTransportationDescription")}
+              </ListItem>
+              <ListItem
+                href="/landtransportation"
+                title={t("services.landTransportationTitle")}
+              >
+                {t("services.landTransportationDescription")}
+              </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-gray-500">
             {t("freightPrice.freightPriceTitle")}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -116,7 +143,7 @@ function NavigationNavbar() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-gray-500">
             {t("freightTracking.freightTrackingTitle")}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -132,7 +159,7 @@ function NavigationNavbar() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-gray-500">
             {t("aboutUs.aboutUsTitle")}
           </NavigationMenuTrigger>
           <NavigationMenuContent>
@@ -157,7 +184,9 @@ function NavigationNavbar() {
         </NavigationMenuItem>
 
         <NavigationMenuItem>
-          <NavigationMenuTrigger>{t("guide.guideTitle")}</NavigationMenuTrigger>
+          <NavigationMenuTrigger className="text-gray-500">
+            {t("guide.guideTitle")}
+          </NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
               <ListItem href="/howto" title={t("guide.howToUseTitle")}>
@@ -172,9 +201,10 @@ function NavigationNavbar() {
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
+
         <NavigationMenuItem>
           <Link href="/blog" legacyBehavior passHref>
-            <NavigationMenuLink className="group inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
+            <NavigationMenuLink className="text-gray-500 group  inline-flex h-10 w-max items-center justify-center rounded-md bg-background px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50">
               {t("parsianCargo.blogTitle")}
             </NavigationMenuLink>
           </Link>
